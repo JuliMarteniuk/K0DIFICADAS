@@ -1,0 +1,192 @@
+#body{
+    background-color: black;
+    height: 100%;
+    width: 97%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+/*.dino{
+    width: 100px;
+    height: 70px;
+    position: relative;
+    top: 140px;
+    left: 580px;
+    background-image: url(Imagenes/dino-run1.png); /*Preguntarle a widi porque se repite si es un solo cactus
+    background-size: 34px 70px;
+    animation: corre 4s alternate running;
+}
+@keyframes corre {
+    0%{
+        left: -100px;
+    }
+    100%{
+        left: 1150px
+    }
+}*/
+
+#caja1,
+#caja2,
+#caja3,
+#caja4,
+#caja5,
+#caja6,
+#caja7,
+#caja8,
+#caja9,
+#caja10,
+#caja11{
+    position: relative;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 380px;
+    width: 1150px;
+    margin-left: 75px;
+}
+
+@keyframes moving-box{
+    0%{
+        top:-70% ;
+    }
+    100%{
+        top: 30%;
+    }
+
+}
+
+#caja1{
+    color: #FF5E5E;
+    animation: moving-box 2s linear forwards;
+}
+
+#caja2{
+    color: #FDA703;
+    animation: moving-box 2.3s linear forwards;
+}
+
+#caja3{
+    color: #FFEC03;
+    animation: moving-box 2.6s  linear forwards;
+}
+
+#caja4{
+    color: #7FE960;
+    animation: moving-box 2.9s  linear forwards;
+}
+
+#caja5{
+    color: #02E1D9;
+    animation: moving-box 3.2s  linear forwards;
+}
+
+#caja6{
+    color: #0ca1e0;
+    animation: moving-box 3.5s  linear forwards;
+}
+
+#caja7{
+    color: #FF0398;
+    animation: moving-box 3.8s linear forwards;
+}
+
+#caja8{
+    color: #FFADF1;
+    animation: moving-box 4.1s  linear forwards;
+}
+
+#caja9{
+    color: #CF8BF9;
+    animation: moving-box 4.4s  linear forwards;
+}
+
+
+#caja10{
+    color: #5502BD;
+    animation: moving-box 4.7s  linear forwards;
+}
+
+#caja11{
+    color: rgba(21, 0, 255, 0.993)  ;
+    animation: moving-box 5s  linear forwards;
+}
+
+
+#caja12,
+#caja13,
+#caja14,
+#caja15,
+#jaca16,
+#caja17{
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 12 ;
+    text-align: center;
+    transform: rotate(150deg);
+    background-color: rgb(27, 221, 173)
+}
+
+#caja12{
+    left: 1%;
+    animation: moving-box11 1s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja13{
+    left: 1%;
+    animation: moving-box11 2s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja14{
+    left: 1%;
+    animation: moving-box11 3s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja15{
+    left: 1%;
+    animation: moving-box11 4s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja16{
+    left: 1%;
+    animation: moving-box11 5s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja17{
+    left: 1%;
+    animation: moving-box11 6s 1 alternate running;
+    bottom: 7%;
+}
+
+
+@keyframes moving-box11{
+    0%{
+        left: 5%;
+    }
+    100%{
+        left: 97%;
+    }
+}
+
+
+#caja20{
+    color: rgb(233, 36, 174);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 600px;
+}
+
+
