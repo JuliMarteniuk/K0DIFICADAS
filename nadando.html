@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaurio Chrome V2</title>
+    <link rel="stylesheet" href="nadando.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="suelo"></div>
+
+        <div class="dino dino-corriendo"></div>
+
+        <div class="score">0</div>
+
+    </div>
+    <!--MODAL  -->
+    <div class="modal" id="modal-alert">
+        <div class="modal-overlay" tabindex="-1">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modal-alert-title">
+                        Error
+                    </h2>
+                </div>
+                <div class="modal-text">
+                    <p id="modal-alert-content">
+                        Something went wrong.
+                    </p>
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-button" id="modal-button-primary"
+                        onclick="document.getElementById('modal-alert').style.display = 'none';">Close</button>
+                        <a href="#" class="sig">SIGUIENTE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game-over">GAME OVER</div>
+    <!-- MÚSICA -->
+    <audio src="sound/moneda.mp3" class="audio-moneda"></audio>
+    <audio src="sound/salto.mp3" class="audio-salto"></audio>
+    <audio src="sound/gameOver.mp3" class="audio-gameOver"></audio>
+    <!-- botones -->
+    <div>
+        <a href="inicio.html" class="boton">Inicio</a>
+        <a href="niveles.html" class="boton">Niveles</a>
+    </div>
+
+    <script src="nadando.js"></script>
+</body>
+
+</html>
