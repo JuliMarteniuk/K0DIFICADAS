@@ -206,6 +206,9 @@ function GanarPuntos() {
         contenedor.classList.add("noche");
     }
     suelo.style.animationDuration = (3/gameVel)+"s";
+    if(score == 3){
+        morir();
+    }
 }
 
 function GameOver() {
