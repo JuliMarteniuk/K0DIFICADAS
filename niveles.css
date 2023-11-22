@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(to bottom, #d768ff, #fa86c0);
-    margin: 25px;
+    margin: 50px;
 }
 body h1{
     text-align: center;
@@ -10,7 +10,11 @@ body h1{
     display: flex;
     flex-wrap: wrap;
     padding: 0 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
+
   
 .fila {
     width: 100%;

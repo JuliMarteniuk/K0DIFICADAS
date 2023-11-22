@@ -1,27 +1,25 @@
-* {
-    padding: 0;
-    margin: 0;
-}
 
-body {
-    height: 100vh;
-    background: #584040;
+body{
+    height: 96vh;
+    background: #dacdcd;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contenedor {
-    width: 960px;
-    height: 360px;
-    margin: 0 auto;
-
+    width: 920px;
+    height: 280px;
+    margin-top: 10%;
+    
     position: relative;
 
-    background: linear-gradient(#b7d6c7 0%, transparent 60%, transparent 80%, #6d757e 100%) #ffe2d1;
-    /*linear-gradient(#90ebff, white);*/
+    background:rgb(194, 222, 233);/*linear-gradient(#90ebff, white);*/
     transition: background-color 1s linear;
     overflow: hidden;
 }
+
 
 .mediodia {
     background-color: #ffdcf3;
@@ -44,7 +42,7 @@ body {
     left: 42px;
     z-index: 2;
 
-    background: url(img/dino2.png) repeat-x 0px 0px;
+    background: url(img_nadando/dino2.png) repeat-x 0px 0px;
     background-size: 336px 84px;
     background-position-x: 0px;
 
@@ -67,7 +65,7 @@ body {
     left: 0;
     z-index: 3;
 
-    background: url(img/mar.png) repeat-x 0px 0px;
+    background: url(img_nadando/mar.png) repeat-x 0px 0px;
     background-size: 48px 258px;
     animation: oleaje 1.5s ease-in-out infinite;
 
@@ -85,13 +83,13 @@ body {
 
 .obstaculo-flotante {
     bottom: 90px;
-    background: url(img/obstaculo2.png) no-repeat;
+    background: url(img_nadando/obstaculo2.png) no-repeat;
     animation: abanear 1s ease-in-out infinite;
 }
 
 .obstaculo-hundido {
     bottom: 0px;
-    background: url(img/obstaculo1.png) no-repeat;
+    background: url(img_nadando/obstaculo1.png) no-repeat;
 }
 
 .nube {
@@ -101,7 +99,7 @@ body {
     position: absolute;
     z-index: 0;
 
-    background: url(img/nube.png) no-repeat;
+    background: url(img_nadando/nube.png) no-repeat;
     background-size: 92px 26px;
 }
 
@@ -111,7 +109,7 @@ body {
     position: absolute;
     z-index: 1;
 
-    background: url(img/moneda.png) no-repeat center center;
+    background: url(img_nadando/moneda.png) no-repeat center center;
 }
 
 .score {
@@ -273,7 +271,7 @@ body {
 .boton{
     height: 30px;
     width: 90px;
-    background-color: #F1C9C2;
+    background-color: #ec93d2;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -282,8 +280,7 @@ body {
     border-radius: 10px;
     margin: 10px 5px;
     position: relative;
-    margin-right: 50%;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 .sig{
     text-align: center;

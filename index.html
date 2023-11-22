@@ -18,6 +18,36 @@
         <div class="score">0</div>
 
     </div>
+    <!--MODAL  -->
+    <div class="modal" id="modal-alert">
+        <div class="modal-overlay" tabindex="-1">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modal-alert-title">
+                        Error
+                    </h2>
+                </div>
+                <div class="modal-text">
+                    <p id="modal-alert-content">
+                        Something went wrong.
+                    </p>
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-button" id="modal-button-primary"
+                        onclick="document.getElementById('modal-alert').style.display = 'none';">Cerrar</button>
+                        <a href="nadando.html" class="sig">AGUA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game-over">GAME OVER</div>
+    <!-- MÚSICA -->
+    <audio src="sound/moneda.mp3" class="audio-moneda"></audio>
+    <audio src="sound/salto.mp3" class="audio-salto"></audio>
+    <audio src="sound/gameOver.mp3" class="audio-gameOver"></audio>
+    <!-- botones -->
+    
+    <a href="niveles.html" class="boton">Niveles</a>
 
     <div class="game-over">GAME OVER</div>
     <script src="script.js"></script>

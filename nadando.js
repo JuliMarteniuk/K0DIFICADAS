@@ -266,9 +266,9 @@ function GanarPuntos() {
     }
 
     // frena cuando llega a esa condición
-    if (score === 3) {
+    if (score === 2000) {
         Estrellarse();
-        show_alert('Felicidades!!', 'Has ganado!', false, "Ir al siguiente nivel")
+        show_alert('Felicidades ganaste!')
         modal-alert('Siguiente', 'inicio')
     }
     suelo.style.animationDuration = (3 / gameVel) + "s";

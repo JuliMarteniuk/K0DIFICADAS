@@ -206,8 +206,11 @@ function GanarPuntos() {
         contenedor.classList.add("noche");
     }
     suelo.style.animationDuration = (3/gameVel)+"s";
-    if(score == 3){
+    // frena cuando llega a esa condición
+    if (score === 200) {
         morir();
+        show_alert('Felicidades ganaste!', "Proba con el de agua")
+        modal-alert('Siguiente', 'inicio')
     }
 }
 
@@ -239,4 +242,17 @@ function IsCollision(a, b, paddingTop, paddingRight, paddingBottom, paddingLeft)
         ((aRect.left + aRect.width - paddingRight) < bRect.left) ||
         (aRect.left + paddingLeft > (bRect.left + bRect.width))
     );
+}
+
+// MODEL CSS
+function show_alert(title, message, btnHide = false, btnLabel = "Close") {
+    document.getElementById("modal-alert-title").innerHTML = title;
+    document.getElementById("modal-alert-content").innerHTML = message;
+    if (btnHide) {
+        document.getElementById("modal-button-primary").style.display = "none";
+    } else {
+        document.getElementById("modal-button-primary").style.display = "block";
+    }
+    document.getElementById("modal-button-primary").innerText = btnLabel;
+    document.getElementById("modal-alert").style.display = "block";
 }
