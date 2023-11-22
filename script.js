@@ -41,7 +41,7 @@ var saltando = false;
 
 var tiempoHastaObstaculo = 2;
 var tiempoObstaculoMin = 1.0;
-var tiempoObstaculoMax = 2.8;
+var tiempoObstaculoMax = 1.8;
 var obstaculoPosY = 16;
 var obstaculos = [];
 
@@ -207,7 +207,7 @@ function GanarPuntos() {
     }
     suelo.style.animationDuration = (3/gameVel)+"s";
     // frena cuando llega a esa condición
-    if (score === 200) {
+    if (score === 100) {
         morir();
         show_alert('Felicidades ganaste!', "Proba con el de agua")
         modal-alert('Siguiente', 'inicio')

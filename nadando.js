@@ -266,7 +266,7 @@ function GanarPuntos() {
     }
 
     // frena cuando llega a esa condición
-    if (score === 2000) {
+    if (score === 50) {
         Estrellarse();
         show_alert('Felicidades ganaste!')
         modal-alert('Siguiente', 'inicio')
